@@ -7,12 +7,31 @@
 		<title>BlogExamples</title>
 		<base href="/">
 		<link rel="stylesheet" type="text/css" href="app.css" media="screen, projector, print">
+		<link rel="stylesheet" type="text/css" href="styles/css/mediaQueries.css" media="screen, projector, print">
 		<script src="vendor/foundation/js/vendor/custom.modernizr.js"></script>
 	</head>
 
 	<body>
 		
 		
+   <script type="text/javascript">
+       function jsUpdateSize(){
+		   // Get the dimensions of the viewport
+		   var width = window.innerWidth ||
+		   document.documentElement.clientWidth ||
+		   document.body.clientWidth;
+		   var height = window.innerHeight ||
+		   document.documentElement.clientHeight ||
+		   document.body.clientHeight;
+
+		   document.getElementById('jsWidth').innerHTML = width;  // Display the width
+		   document.getElementById('jsHeight').innerHTML = height;// Display the height
+		};
+		window.onload = jsUpdateSize;       // When the page first loads
+		window.onresize = jsUpdateSize;     // When the browser changes size
+	</script>
+
+
 		<!-- ng-include for main controller -->
 		<div ng-controller="AppCtrl" ng-include="templateUrl"></div>
 		
