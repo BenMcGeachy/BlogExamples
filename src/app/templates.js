@@ -20,11 +20,11 @@ angular.module('app/app.view.html', []).run(['$templateCache', function($templat
 		'		<h4 class="small-8 medium-6 large-4 columns">This box will be green if your viewport is smaller than 768px</h4>\n' +
 		'	</div>\n' +
 		'\n' +
-		'	<div class="browser-dimenstions">\n' +
-		'		<div class="small-12 medium-6 large-6 columns">\n' +
+		'	<div class="small-12 small-centered columns">\n' +
+		'		<div class="small-12 medium-6 large-6 columns width-row">\n' +
 		'			<h3>Current Browser Width:</h3>&nbsp;<h3 id="jsWidth"></h3><h3>px</h3>\n' +
 		'		</div>\n' +
-		'		<div class="small-12 medium-6 large-6 columns">\n' +
+		'		<div class="small-12 medium-6 large-6 columns width-row">\n' +
 		'			<h3>Current Browser Height:</h3>&nbsp;<h3 id="jsHeight"></h3><h3>px</h3>\n' +
 		'		</div>\n' +
 		'	</div>\n' +
