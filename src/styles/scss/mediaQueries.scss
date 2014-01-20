@@ -1,4 +1,9 @@
+$small: "only screen and (max-width: 768px)"; /* small devices such as phones */
+$medium: "only screen and (min-width: 768px) and (max-width: 1280px)"; /* Medium devices such as tablets and laptops */
+$large: "only screen and (min-width: 1281px)"; /* Large devices such as desktops and TVs */
+
 body {
+	// GENERAL PAGE LAYOUT
 	h1 {
 		text-align: center;
 	}
@@ -10,6 +15,9 @@ body {
 		margin-bottom: 20px;
 		text-align: center;
 	}
+	// END GENERAL PAGE LAYOUT
+
+	// Make all rectangles the same height and width, ready to have colour set when media query is applied
 	.large-box,
 	.medium-box,
 	.small-box {
@@ -17,18 +25,24 @@ body {
 		height: 100px;
 		margin-bottom: 50px;
 	}
+
+	// Colour the top rectangle red if the screen is large
 	.large-box {
-		@media only screen and (min-width: 1281px) {
+		@media #{$large} {
 			background: red;
 		}
 	}
+
+	// Colour the middle rectangle yellow if the screen is medium
 	.medium-box {
-		@media only screen and (min-width: 769px) and (max-width: 1280px) {
+		@media #{$medium} {
 			background: yellow;
 		}
 	}
+
+	// Colour the bottom rectangle green if the screen is small 
 	.small-box {
-		@media only screen and (max-width: 768px) {
+		@media #{$small} {
 			background: green;
 		}
 	}
