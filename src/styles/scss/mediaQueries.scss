@@ -15,6 +15,9 @@ body {
 		margin-bottom: 20px;
 		text-align: center;
 	}
+	.media-block {
+		margin-bottom: 50px;
+	}
 	// END GENERAL PAGE LAYOUT
 
 	// Make all rectangles the same height and width, ready to have colour set when media query is applied
@@ -23,13 +26,19 @@ body {
 	.small-box {
 		border: solid 1px #000;
 		height: 100px;
-		margin-bottom: 50px;
+		p {
+			text-align: center;
+			padding-top: 10px;
+		}
 	}
 
 	// Colour the top rectangle red if the screen is large
 	.large-box {
 		@media #{$large} {
 			background: red;
+			p {
+				color: white;
+			}
 		}
 	}
 
@@ -44,6 +53,9 @@ body {
 	.small-box {
 		@media #{$small} {
 			background: green;
+			p {
+				color: white;
+			}
 		}
 	}
 }
