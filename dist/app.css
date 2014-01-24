@@ -43,6 +43,51 @@
   justify-content: space-between;
   /* NEW: Opera 12.1, Firefox 22+ */
 }
+/* line 4, ../scss/exampleOne.scss */
+.flexExamples h4 {
+  margin-top: 20px;
+}
+/* line 8, ../scss/exampleOne.scss */
+.flexExamples .red, .flexExamples .yellow, .flexExamples .green {
+  width: 300px;
+  height: 100px;
+  border: solid 2px black;
+}
+/* line 13, ../scss/exampleOne.scss */
+.flexExamples .red {
+  background: red;
+}
+/* line 16, ../scss/exampleOne.scss */
+.flexExamples .yellow {
+  background: yellow;
+}
+/* line 19, ../scss/exampleOne.scss */
+.flexExamples .green {
+  background: green;
+}
+/* line 23, ../scss/exampleOne.scss */
+.flexExamples .flex-container {
+  display: -webkit-box;
+  /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
+  display: -moz-box;
+  /* OLD: Firefox (buggy) */
+  display: -ms-flexbox;
+  /* MID: IE 10 */
+  display: -webkit-flex;
+  /* NEW, Chrome 21+ */
+  display: flex;
+  /* NEW: Opera 12.1, Firefox 22+ */
+  -webkit-box-pack: space-between;
+  /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
+  -moz-box-pack: space-between;
+  /* OLD: Firefox (buggy) */
+  -ms-flex-pack: space-between;
+  /* MID: IE 10 */
+  -webkit-justify-content: space-between;
+  /* NEW, Chrome 21+ */
+  justify-content: space-between;
+  /* NEW: Opera 12.1, Firefox 22+ */
+}
 @charset "UTF-8";
 @import url("//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
 /**
