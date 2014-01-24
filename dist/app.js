@@ -1,4 +1,15 @@
-angular.module('templates', ['app/app.view.html', 'app/page-two/page-two.view.html']);
+'use strict';
+
+angular.module('app', ['templates', 'common'])
+	.controller('AppCtrl', ['$scope', function ($scope) {
+			$scope.message = 'Hello World';
+			$scope.templateUrl = 'app/app.view.html';
+		}
+	]);;'use strict';
+
+angular.module('common', ['dependencies']);;'use strict';
+
+angular.module('dependencies', []);;;angular.module('templates', ['app/app.view.html', 'app/page-two/page-two.view.html']);
 
 angular.module('app/app.view.html', []).run(['$templateCache', function($templateCache) {
 	'use strict';

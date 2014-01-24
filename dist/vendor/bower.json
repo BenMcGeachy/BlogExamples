@@ -1,0 +1,12 @@
+{
+  "name": "BlogExamples",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "latest",
+    "foundation": "latest",
+    "angular-route": "~1.2.9"
+  },
+  "devDependencies": {
+    "angular-mocks": "latest"
+  }
+}
