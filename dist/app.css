@@ -111,24 +111,24 @@
   align-items: center;
   /* NEW: Opera 12.1, Firefox 22+ */
 }
-/* line 7, ../scss/exampleTwo.scss */
+/* line 6, ../scss/exampleTwo.scss */
 .relevant-articles img {
   padding: 0;
   height: 90px;
   width: 90px;
 }
 
-/* line 14, ../scss/exampleTwo.scss */
+/* line 13, ../scss/exampleTwo.scss */
 .body-text {
   margin-bottom: 0;
 }
 
-/* line 18, ../scss/exampleTwo.scss */
+/* line 17, ../scss/exampleTwo.scss */
 .meta-data {
   margin: 0 0 20px 0;
 }
 
-/* line 22, ../scss/exampleTwo.scss */
+/* line 21, ../scss/exampleTwo.scss */
 .meta-data, li.people, .people > ul {
   list-style-type: none;
   display: -webkit-box;
@@ -171,24 +171,6 @@
   /* NEW, Chrome 21+ */
   flex-wrap: wrap;
   /* NEW: Opera 12.1, Firefox 22+ */
-}
-
-/* line 30, ../scss/exampleTwo.scss */
-.individuals {
-  -webkit-box-pack: center;
-  /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
-  -moz-box-pack: center;
-  /* OLD: Firefox (buggy) */
-  -ms-flex-pack: center;
-  /* MID: IE 10 */
-  -webkit-justify-content: center;
-  /* NEW, Chrome 21+ */
-  justify-content: center;
-  /* NEW: Opera 12.1, Firefox 22+ */
-}
-/* line 32, ../scss/exampleTwo.scss */
-.individuals li {
-  margin-right: 5px;
 }
 @charset "UTF-8";
 @import url("//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");

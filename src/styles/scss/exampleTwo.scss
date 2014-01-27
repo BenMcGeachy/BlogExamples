@@ -3,7 +3,6 @@
 .relevant-articles {
 	@include flexBox;
 	@include flexAlignItems(center);
-	// @include flexJustifyContent(space-between);
 	img {
 		padding: 0;
 		height: 90px;
@@ -27,9 +26,8 @@
 	@include flexWrap(wrap);
 }
 
-.individuals {
-	@include flexJustifyContent(center);
-	li {
-		margin-right: 5px;
-	}	
-}
+// .individuals {
+// 	li {
+// 		margin-right: 5px;
+// 	}	
+// }
