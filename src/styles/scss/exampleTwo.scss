@@ -1,0 +1,35 @@
+@import 'variables';
+
+.relevant-articles {
+	@include flexBox;
+	@include flexAlignItems(center);
+	// @include flexJustifyContent(space-between);
+	img {
+		padding: 0;
+		height: 90px;
+		width: 90px;
+	}	
+}
+
+.body-text {
+	margin-bottom: 0;
+}
+
+.meta-data {
+	margin: 0 0 20px 0;
+}
+
+.meta-data, li.people, .people > ul {
+	list-style-type: none;
+	@include flexBox;
+	@include flexJustifyContent(space-between);
+	@include flexAlignItems(center);
+	@include flexWrap(wrap);
+}
+
+.individuals {
+	@include flexJustifyContent(center);
+	li {
+		margin-right: 5px;
+	}	
+}
